@@ -45,7 +45,6 @@ var SuddenSpock = (function () {
 
             (document.getElementsByTagName('body')[0]).appendChild(spockNode);
         }
-        console.log(spockNode);
         style = spockNode.style;
 
         function animate(style, from, to, step, speed, callback) {
