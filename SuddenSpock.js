@@ -17,6 +17,7 @@ var SuddenSpock = (function () {
     function playFascinating(callback) {
         var sound = fascinatingSounds[Math.floor(Math.random() * fascinatingSounds.length)],
             aud = new window.Audio('data:audio/ogg;base64,' + sound);
+        aud.volume = 0.1;
         if (typeof callback === 'function') {
             aud.addEventListener("ended", callback, false);
         }
